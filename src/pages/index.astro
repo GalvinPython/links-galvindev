@@ -1,0 +1,109 @@
+---
+import { Image } from "@astrojs/image/components";
+// import { BsPinAngleFill } from "react-icons/bs/index.js";
+import {
+FaGithub,
+FaHome,
+FaTwitch,
+FaTwitter,
+FaYoutube,
+} from "react-icons/fa/index.js";
+import Head from "../components/Head.astro";
+import LinkCard from "../components/LinkCard.astro";
+import LinksContainer from "../components/LinksContainer.astro";
+---
+
+<html lang="en">
+  <Head />
+  <body class="my-16 flex flex-col items-center px-8">
+    <header class="flex flex-col items-center">
+      <Image
+      src="/galvinpython.png"
+      alt="GalvinPython Logo"
+      format="png"
+      width={96}
+      height={96}
+      class="rounded-full"
+      />
+      <h1 class="mt-4 text-3xl font-bold">GalvinDev / GalvinPython</h1>
+      <p class="text-md mb-8 mt-1">@egalvinyt</p>
+    </header>
+    <main class="flex w-full flex-col gap-1">
+      <div id="blob"></div>
+      <div id="blur"></div>
+      <!-- <LinksContainer title="Pinned" icon={BsPinAngleFill}>
+        <LinkCard
+          href=""
+          title=""
+          icon={}
+          color="#000"
+        />
+      </LinksContainer> -->
+      <LinksContainer>
+        <!-- Website -->
+        <LinkCard
+        href="https://galvindev.me.uk"
+        title="Website"
+        icon={FaHome}
+        color="#000"
+        />
+        <div class="flex w-full flex-col items-center">
+          <span class="mb-3 h-0.5 w-56 rounded-lg bg-white"></span>
+        </div>
+
+        <!-- YouTube -->
+        <LinkCard
+          href="https://youtube.com/@Redblock"
+          title="YouTube (Redblock)"
+          icon={FaYoutube}
+          color="#f00"
+        />
+        <LinkCard
+          href="https://youtube.com/@RedblockF3"
+          title="YouTube (RedblockF3)"
+          icon={FaYoutube}
+          color="#f00"
+        />
+        <LinkCard
+          href="https://youtube.com/@Stats100"
+          title="YouTube (Stats100)"
+          icon={FaYoutube}
+          color="#f00"
+        />
+        <div class="flex w-full flex-col items-center">
+          <span class="mb-3 h-0.5 w-56 rounded-lg bg-white"></span>
+        </div>
+        
+        <!-- Twitter -->
+        <LinkCard
+          href="https://twitter.com/egalvinyt"
+          title="Twitter"
+          icon={FaTwitter}
+          color="#1DA1F2"
+        />
+        <div class="flex w-full flex-col items-center">
+          <span class="mb-3 h-0.5 w-56 rounded-lg bg-white"></span>
+        </div>
+
+        <!-- Twitch -->
+        <LinkCard
+          href="https://twitch.tv/RedblockF3"
+          title="Twitch"
+          icon={FaTwitch}
+          color="#9146FF"
+        />
+        <div class="flex w-full flex-col items-center">
+          <span class="mb-3 h-0.5 w-56 rounded-lg bg-white"></span>
+        </div>
+
+        <!-- Github -->
+        <LinkCard
+          href="https://github.com/GalvinPython"
+          title="GitHub"
+          icon={FaGithub}
+          color="#000"
+        />
+      </LinksContainer>
+    </main>
+  </body>
+</html>

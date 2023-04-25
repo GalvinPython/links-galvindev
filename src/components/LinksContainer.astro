@@ -1,0 +1,21 @@
+---
+import type { IconType } from "react-icons";
+
+interface Props {
+  title?: string;
+  icon?: IconType;
+}
+
+const { title, icon: Icon } = Astro.props;
+---
+
+<section class="flex w-full flex-col items-center">
+  {
+    title && (
+      <div class="mb-4 flex items-center gap-1 text-lg font-semibold">
+        {Icon && <Icon />} <p>{title}</p>
+      </div>
+    )
+  }
+  <slot />
+</section>

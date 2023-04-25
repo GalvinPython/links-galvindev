@@ -1,0 +1,41 @@
+---
+import { Image } from "@astrojs/image/components";
+import type { IconType } from "react-icons";
+
+interface Props {
+  href: string;
+  title: string;
+  icon?: IconType;
+  color?: string;
+}
+
+const { href, title, icon: Icon, color, image } = Astro.props;
+---
+
+<a
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="mb-3.5 flex w-full max-w-3xl items-center rounded-md bg-gray-100 p-1.5 transition-all hover:scale-105"
+>
+  <div class="flex w-full items-center justify-center gap-0.5">
+    <div>
+      {Icon && <Icon className="h-8 w-8 p-1" color={color} />}
+      {
+        image && (
+          <Image
+            class="h-10 w-10"
+            src={image}
+            alt={title}
+            format="webp"
+            width={48}
+            height={48}
+          />
+        )
+      }
+    </div>
+    <h2 class="font-semibold text-gray-700">
+      {title}
+    </h2>
+  </div>
+</a>
