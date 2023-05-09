@@ -2,10 +2,14 @@
 "Forked" from [ToastedDev/links.toastify.tk](https://github.com/ToastedDev/links.toastify.tk)
 
 # Changelog
+## 09/05/2023
+- Fixed the background gradient, so it no longer cuts off when scrolling down
+
 ## 01/05/2023
 - Fixed bug allowing users to scroll left or right on desktop
   - However, scrolling down removes the gradient. This is why CSS sucks 🙃
-- Fixed `Web app manifest should contain valid JSON` issue
+- ~~Fixed `Web app manifest should contain valid JSON` issue~~
+  - **09/05/2023: This bug was not fixed in the final build**
 - Added embed image
 
 ## 26/04/2023
