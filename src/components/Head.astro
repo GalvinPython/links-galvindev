@@ -53,15 +53,44 @@ const { title = "Links" } = Astro.props;
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
     
-    body {
+    * {
+      padding: 0%;
+      margin: 0%;
+    }
+
+    html {
       font-family: "Inter", sans-serif;
-      height: 100%;
-      margin: 0rem;
       overflow-x: hidden;
       overflow-y: auto;
-      /* @apply bg-gradient-to-b from-[#696eff] to-[#30223f] text-white; */
-      background: linear-gradient(180deg, rgba(105,110,255,1) 0%, rgba(48,34,63,1) 100%);
+      /* background: linear-gradient(180deg, rgba(105,110,255,1) 0%, rgba(48,34,63,1) 100%); */
+      background: #111;
       color: white;
     }
+
+    /* html,
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    } */
+
+    body > * {
+      flex-shrink: 0;
+    }
+
+    body {
+    }
+
+    /* body {
+      font-family: "Inter", sans-serif;
+      /* height: 100%;
+      margin: 0rem;
+      padding: 0%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      /* @apply bg-gradient-to-b from-[#696eff] to-[#30223f] text-white;
+      background: linear-gradient(180deg, rgba(105,110,255,1) 0%, rgba(48,34,63,1) 100%);
+      color: white;
+    } */
   </style>
 </head>
