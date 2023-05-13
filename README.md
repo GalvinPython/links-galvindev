@@ -3,7 +3,7 @@ Official GitHub repository for my [links site](https://links.galvindev.me.uk)
 "Forked" from [ToastedDev/links.toastify.tk](https://github.com/ToastedDev/links.toastify.tk)
 
 # Changelog
-# 13/05/2023 (1.4)
+## 13/05/2023 (1.4)
 * Removed the background gradient to a static background color (#111) whilst I work improving the CSS
 * Added version number and last update text to the page
 * Added launch date to website
