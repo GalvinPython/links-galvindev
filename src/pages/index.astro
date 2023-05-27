@@ -1,8 +1,9 @@
 ---
 import { Image } from "@astrojs/image/components";
-// import { BsPinAngleFill } from "react-icons/bs/index.js";
+import { BsPinAngleFill } from "react-icons/bs/index.js";
 import {
 FaGithub,
+FaMouse,
 FaHome,
 FaTwitch,
 FaTwitter,
@@ -31,27 +32,31 @@ import LinksContainer from "../components/LinksContainer.astro";
     <main class="flex w-full flex-col gap-1">
       <div id="blob"></div>
       <div id="blur"></div>
-      <!-- <LinksContainer title="Pinned" icon={BsPinAngleFill}>
+      <LinksContainer title="Pinned" icon={BsPinAngleFill}>
         <LinkCard
-          href=""
-          title=""
-          icon={}
+          href="https://gc.galvindev.me.uk"
+          title="*NEW* Global Clicker"
+          icon={FaMouse}
           color="#000"
         />
-      </LinksContainer> -->
+      </LinksContainer>
       <LinksContainer>
         <!-- Website -->
+        <!-- <div class="flex w-full flex-col items-center">
+          <span class="mb-3 h-0.5 w-56 rounded-lg bg-white"></span>
+        </div>
+        
         <LinkCard
         href="https://galvindev.me.uk"
         title="Website (Under Construction - Launching June)"
         icon={FaHome}
         color="#000"
-        />
+        /> -->
+        
+        <!-- YouTube -->
         <div class="flex w-full flex-col items-center">
           <span class="mb-3 h-0.5 w-56 rounded-lg bg-white"></span>
         </div>
-
-        <!-- YouTube -->
         <LinkCard
           href="https://youtube.com/@Redblock"
           title="YouTube (Redblock)"
@@ -70,33 +75,33 @@ import LinksContainer from "../components/LinksContainer.astro";
           icon={FaYoutube}
           color="#f00"
         />
+        
+        <!-- Twitter -->
         <div class="flex w-full flex-col items-center">
           <span class="mb-3 h-0.5 w-56 rounded-lg bg-white"></span>
         </div>
-        
-        <!-- Twitter -->
         <LinkCard
           href="https://twitter.com/egalvinyt"
           title="Twitter"
           icon={FaTwitter}
           color="#1DA1F2"
         />
+        
+        <!-- Twitch -->
         <div class="flex w-full flex-col items-center">
           <span class="mb-3 h-0.5 w-56 rounded-lg bg-white"></span>
         </div>
-
-        <!-- Twitch -->
         <LinkCard
           href="https://twitch.tv/RedblockF3"
           title="Twitch"
           icon={FaTwitch}
           color="#9146FF"
         />
+        
+        <!-- Github -->
         <div class="flex w-full flex-col items-center">
           <span class="mb-3 h-0.5 w-56 rounded-lg bg-white"></span>
         </div>
-
-        <!-- Github -->
         <LinkCard
           href="https://github.com/GalvinPython"
           title="GitHub"
@@ -105,7 +110,7 @@ import LinksContainer from "../components/LinksContainer.astro";
         />
 
         <!-- "Footer" -->
-        <small class="text-md mb-8 mt-1 italic">Version 1.4 | Last updated: 13/05/2023 | <a href="https://github.com/GalvinPython/links-galvindev">View Source</a></small>
+        <small class="text-md mb-8 mt-1 italic">Version 1.5 | Last updated: 27/05/2023 | <a href="https://github.com/GalvinPython/links-galvindev">View Source</a></small>
       </LinksContainer>
     </main>
   </body>

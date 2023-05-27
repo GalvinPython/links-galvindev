@@ -3,6 +3,11 @@ Official GitHub repository for my [links site](https://links.galvindev.me.uk)
 "Forked" from [ToastedDev/links.toastify.tk](https://github.com/ToastedDev/links.toastify.tk)
 
 # Changelog
+## 27/05/2023 (1.5)
+* Added link to new [Global Clicker](https://gc.galvindev.me.uk)
+* Removed the website link - it doesn't need to exist yet
+* Restructed comments in `index.astro`
+
 ## 13/05/2023 (1.4)
 * Removed the background gradient to a static background color (#111) whilst I work improving the CSS
 * Added version number and last update text to the page
