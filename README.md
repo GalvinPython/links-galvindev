@@ -1,8 +1,14 @@
 # links.galvindev.me.uk
-Official GitHub repository for my [links site](https://links.galvindev.me.uk)
+Official GitHub repository for my [links site](https://links.galvindev.me.uk)  
 "Forked" from [ToastedDev/links.toastify.tk](https://github.com/ToastedDev/links.toastify.tk)
 
 # Changelog
+## 20/10/2023 (1.6)
+* Removed lines between social media platforms
+* Added more YouTube links
+* Updated metadata stuff
+* General bug fixing
+
 ## 27/05/2023 (1.5)
 * Added link to new [Global Clicker](https://gc.galvindev.me.uk)
 * Removed the website link - it doesn't need to exist yet
