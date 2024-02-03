@@ -1,17 +1,9 @@
----
-interface Props {
-  title?: string;
-}
-
-const { title = "Links" } = Astro.props;
----
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <meta name="generator" content={Astro.generator} />
-  <title>{title} | GalvinDev</title>
-  <meta property="og:title" content={`${title} | GalvinDev`} />
+  <title>Links | GalvinDev</title>
+  <meta property="og:title" content='Links | GalvinDev' />
   <meta name="description" content="All the links for GalvinDev/GalvinPython" />
   <meta property="og:description" content="All the links for GalvinDev/GalvinPython" />
   <meta name="theme-color" content="#ffdb00" />

@@ -1,8 +1,13 @@
 # links.galvindev.me.uk
 Official GitHub repository for my [links site](https://links.galvindev.me.uk)  
-"Forked" from [ToastedDev/links.toastify.tk](https://github.com/ToastedDev/links.toastify.tk)
 
 # Changelog
+## 03/02/2024 (2.0 Preview 1)
+* Preparing for 2024 redesign
+  * Access this at [/preview](https://links.galvindev.me.uk/preview)
+* Replaced section deviders with text instead of lines, makes it look neater
+* Updated pfp
+
 ## 20/10/2023 (1.6)
 * Removed lines between social media platforms
 * Added more YouTube links
