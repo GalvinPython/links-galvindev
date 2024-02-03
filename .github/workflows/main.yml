@@ -34,11 +34,7 @@ jobs:
         run: ls -l dist.zip
 
       - name: Upload Build Artifact
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/upload-artifact@v2
         with:
-          upload_url: https://uploads.github.com/repos/${{ github.repository }}/releases/${{ github.run_id }}/assets
-          asset_path: dist.zip
-          asset_name: dist.zip
-          asset_content_type: application/zip
+          name: dist
+          path: dist.zip
