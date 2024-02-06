@@ -2,6 +2,10 @@
 Official GitHub repository for my [links site](https://links.galvindev.me.uk)  
 
 # Changelog
+## 06/02/2024 (2.0 Preview 2)
+* Added Bluesky
+* Readded pinned section
+
 ## 03/02/2024 (2.0 Preview 1)
 * Preparing for 2024 redesign
   * Access this at [/preview](https://links.galvindev.me.uk/preview)

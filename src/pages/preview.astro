@@ -1,5 +1,6 @@
 ---
 import { Image } from "@astrojs/image/components";
+import { BsPinAngleFill } from "react-icons/bs/index.js";
 import {
   FaGithub,
   FaMouse,
@@ -7,6 +8,7 @@ import {
   FaTwitch,
   FaTwitter,
   FaYoutube,
+  FaSquare,
 } from "react-icons/fa/index.js";
 import Head from "../components/Head.astro";
 import LinkCard from "../components/LinkCard.astro";
@@ -36,6 +38,15 @@ import LinksContainer from "../components/LinksContainer.astro";
     <main class="flex w-full flex-col gap-1">
       <div id="blob"></div>
       <div id="blur"></div>
+      <LinksContainer title="Pinned" icon={BsPinAngleFill}>
+        <LinkCard
+          href="https://github.com/GalvinPython"
+          title="GitHub"
+          icon={FaGithub}
+          color="#000"
+        />
+      </LinksContainer>
+
       <LinksContainer>
         <!-- Website -->
         <b class="text-md mb-2">galvindev.me.uk</b>
@@ -98,11 +109,12 @@ import LinksContainer from "../components/LinksContainer.astro";
         />
 
         <LinkCard
-          href="https://github.com/GalvinPython"
-          title="GitHub"
-          icon={FaGithub}
-          color="#000"
+          href="https://bsky.app/profile/galvin.bsky.social"
+          title="Bluesky"
+          icon={FaSquare}
+          color="#1DA1F2"
         />
+
 
         <!-- <LinkCard
           href="https://twitch.tv/RedblockF3"
@@ -113,7 +125,7 @@ import LinksContainer from "../components/LinksContainer.astro";
 
         <!-- "Footer" -->
         <small class="text-md mb-2 mt-1 italic"
-          >Last updated: 3rd February 2024 | <a
+          >Last updated: 6th February 2024 | <a
             href="https://github.com/GalvinPython/links-galvindev"
             >View Source</a
           ></small
