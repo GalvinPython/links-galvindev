@@ -2,6 +2,13 @@
 Official GitHub repository for my [links site](https://links.galvindev.me.uk)  
 
 # Changelog
+## 21/05/2024 (2.0 Preview 3)
+* Changed all Font Awesome icons to be Simple Icons where possible
+* Titles are used instead of bold tags to seperate sections
+* Updated profile image
+* Added Bluesky icon
+* Changed YouTube channels
+
 ## 06/02/2024 (2.0 Preview 2)
 * Added Bluesky
 * Readded pinned section
