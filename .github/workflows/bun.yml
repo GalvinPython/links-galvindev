@@ -11,7 +11,6 @@ permissions:
 jobs:
   update-bun-lockb:
     name: "Update bun.lockb"
-    if: github.actor == 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: oven-sh/setup-bun@v1
