@@ -1,0 +1,25 @@
+name: Update bun.lockb
+
+on:
+  push:
+    branches:
+      - "*"
+
+permissions:
+  contents: write
+
+jobs:
+  update-bun-lockb:
+    name: "Update bun.lockb"
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: oven-sh/setup-bun@v1
+      - uses: actions/checkout@v4
+      - run: |
+          bun install
+          git add bun.lockb
+          git config --global user.name 'dependabot[bot]'
+          git config --global user.email 'dependabot[bot]@users.noreply.github.com'
+          git commit --amend --no-edit 
+          git push --force
