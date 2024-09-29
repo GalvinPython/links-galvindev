@@ -7,6 +7,7 @@ import {
   SiYoutube,
   SiTwitter,
   SiDiscord,
+  SiModrinth,
 } from "react-icons/si";
 import Head from "../components/Head.astro";
 import LinkCard from "../components/LinkCard.astro";
@@ -15,8 +16,8 @@ import LinksContainer from "../components/LinksContainer.astro";
 
 <html lang="en">
   <Head />
-  <body class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 px-8">
-    <div class="absolute inset-0 bg-black opacity-50"></div>
+  <body class="bg-gradient-to-r from-blue-900 via-purple-900 to-pink-900 px-8">
+    <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
     <div class="relative my-16 flex flex-col items-center">
       <header class="flex flex-col items-center">
         <Image
@@ -60,6 +61,19 @@ import LinksContainer from "../components/LinksContainer.astro";
             icon={SiYoutube}
             color="#f00"
           />
+        </LinksContainer>
+
+        <LinksContainer title="Modrinth">
+          <LinkCard
+            href="https://modrinth.com/user/GalvinPython"
+            title="My Minecraft Mods"
+            icon={SiModrinth}
+            color="#00AF5C"
+          />
+          <p>
+            I prefer if you download my mods through Modrinth instead of
+            GitHub/Curseforge so I can get revenue :3
+          </p>
         </LinksContainer>
 
         <LinksContainer title="Discord">
