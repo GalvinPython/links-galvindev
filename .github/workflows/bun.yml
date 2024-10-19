@@ -22,9 +22,21 @@ jobs:
       - name: Install dependencies with Bun
         run: bun install
 
-      - name: Commit and push changes to bun.lockb
+      - name: Check for changes
+        id: git_status
         run: |
           git add bun.lockb
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to bun.lockb"
+            echo "::set-output name=changes_detected::false"
+          else
+            echo "Changes detected to bun.lockb"
+            echo "::set-output name=changes_detected::true"
+          fi
+
+      - name: Commit and push changes to bun.lockb
+        if: steps.git_status.outputs.changes_detected == 'true'
+        run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git commit -m "Update bun.lockb (via GitHub Actions)"
