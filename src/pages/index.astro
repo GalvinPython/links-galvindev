@@ -2,7 +2,7 @@
 import Image from "astro/components/Image.astro";
 import { FaHome } from "react-icons/fa";
 import {
-  //   SiBluesky,
+  SiBluesky,
   SiGithub,
   SiYoutube,
   SiTwitter,
@@ -94,18 +94,25 @@ import LinksContainer from "../components/LinksContainer.astro";
 
         <LinksContainer title="Other Social Media">
           <LinkCard
+              href="https://bsky.app/profile/galvin.bsky.social"
+              title="Bluesky"
+              icon={SiBluesky}
+              color="#0285FF"
+          />
+          <br />
+          <LinkCard
+              href="https://bsky.app/profile/jsalstats.xyz"
+              title="Bluesky (JSALStats)"
+              icon={SiBluesky}
+              color="#0285FF"
+          />
+          <br />
+          <LinkCard
             href="https://twitter.com/egalvinyt"
             title="Twitter"
             icon={SiTwitter}
             color="#1DA1F2"
           />
-
-          <!-- <LinkCard
-            href="https://bsky.app/profile/galvin.bsky.social"
-            title="Bluesky"
-            icon={SiBluesky}
-            color="#1DA1F2"
-          /> -->
         </LinksContainer>
       </main>
     </div>
