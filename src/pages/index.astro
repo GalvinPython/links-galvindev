@@ -2,12 +2,12 @@
 import Image from "astro/components/Image.astro";
 import { FaHome } from "react-icons/fa";
 import {
-  SiBluesky,
-  SiGithub,
-  SiYoutube,
-  SiX,
-  SiDiscord,
-  SiModrinth,
+    SiBluesky,
+    SiGithub,
+    SiYoutube,
+    SiX,
+    SiDiscord,
+    SiModrinth,
 } from "react-icons/si";
 import Head from "../components/Head.astro";
 import LinkCard from "../components/LinkCard.astro";
@@ -15,106 +15,121 @@ import LinksContainer from "../components/LinksContainer.astro";
 ---
 
 <html lang="en">
-  <Head />
-  <body class="bg-gradient-to-r from-blue-900 via-purple-900 to-pink-900 px-8">
-    <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
-    <div class="relative my-16 flex flex-col items-center">
-      <header class="flex flex-col items-center">
-        <Image
-          src="/pfp.jpg"
-          alt="GalvinPython Logo"
-          format="jpg"
-          width={96}
-          height={96}
-          class="rounded-full"
-        />
+    <Head />
+    <body
+        class="bg-gradient-to-r from-blue-900 via-purple-900 to-pink-900 px-8"
+    >
+        <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
+        <div class="relative my-16 flex flex-col items-center">
+            <header class="flex flex-col items-center">
+                <Image
+                    src="/pfp.jpg"
+                    alt="GalvinPython Logo"
+                    format="jpg"
+                    width={96}
+                    height={96}
+                    class="rounded-full"
+                />
 
-        <h1 class="mt-4 text-3xl font-bold">Galvin</h1>
-        <b class="text-md mb-2 mt-1">
-          I'm a C#, JavaScript/TypeScript, and Python Developer, Video Editor,
-          and YouTube Content Creator
-        </b>
-      </header>
-      <main class="flex w-full flex-col gap-1">
-        <LinksContainer title="GitHub">
-          <LinkCard
-            href="https://github.com/GalvinPython"
-            title="GitHub"
-            icon={SiGithub}
-            color="#000"
-          />
-        </LinksContainer>
+                <h1 class="mt-4 text-3xl font-bold">Galvin</h1>
+                <b class="text-md mb-2 mt-1">
+                    I'm a C#, JavaScript/TypeScript, and Python Developer, Video
+                    Editor, and YouTube Content Creator
+                </b>
+            </header>
+            <main class="flex w-full flex-col gap-1">
+                <!-- Github -->
+                <LinksContainer title="GitHub">
+                    <LinkCard
+                        href="https://github.com/GalvinPython"
+                        title="GitHub"
+                        icon={SiGithub}
+                        color="#000"
+                    />
+                </LinksContainer>
 
-        <LinksContainer title="Website">
-          <LinkCard
-            href="https://imgalvin.me"
-            title="Website"
-            icon={FaHome}
-            color="#000"
-          />
-        </LinksContainer>
+                <!-- Website -->
+                <LinksContainer title="Website">
+                    <LinkCard
+                        href="https://imgalvin.me"
+                        title="Website"
+                        icon={FaHome}
+                        color="#000"
+                    />
+                </LinksContainer>
 
-        <LinksContainer title="YouTube">
-          <LinkCard
-            href="https://youtube.com/@Stats100"
-            title="Stats100"
-            icon={SiYoutube}
-            color="#f00"
-          />
-        </LinksContainer>
+                <!-- YouTube -->
+                <LinksContainer title="YouTube">
+                    <LinkCard
+                        href="https://youtube.com/@Stats100"
+                        title="Stats100"
+                        icon={SiYoutube}
+                        color="#f00"
+                    />
+                </LinksContainer>
 
-        <LinksContainer title="Modrinth">
-          <LinkCard
-            href="https://modrinth.com/user/GalvinPython"
-            title="My Minecraft Mods"
-            icon={SiModrinth}
-            color="#00AF5C"
-          />
-          <p>
-            I prefer if you download my mods through Modrinth instead of
-            GitHub/Curseforge so I can get revenue :3
-          </p>
-        </LinksContainer>
+                <!-- Discord -->
+                <LinksContainer title="Discord">
+                    <LinkCard
+                        href="https://discord.com/users/330462254053064704"
+                        title="My Profile (imgalvin)"
+                        icon={SiDiscord}
+                        color="#5865F2"
+                    />
+                    <br />
+                    <LinkCard
+                        href="https://discord.gg/PKD8XJrRjk"
+                        title="Stats100 & Nia Stats Discord Server"
+                        icon={SiDiscord}
+                        color="#5865F2"
+                    />
+                    <br />
+                    <LinkCard
+                        href="https://autopublisher.imgalvin.me"
+                        title="Auto Publisher"
+                        icon={SiDiscord}
+                        color="#5865F2"
+                    />
+                </LinksContainer>
 
-        <LinksContainer title="Discord">
-          <LinkCard
-            href="https://discord.gg/PKD8XJrRjk"
-            title="Stats100 & Nia Stats Discord Server"
-            icon={SiDiscord}
-            color="#5865F2"
-          />
-          <br />
-          <LinkCard
-            href="https://autopublisher.imgalvin.me"
-            title="Auto Publisher"
-            icon={SiDiscord}
-            color="#5865F2"
-          />
-        </LinksContainer>
+                <!-- Modrinth -->
+                <LinksContainer title="Modrinth">
+                    <LinkCard
+                        href="https://modrinth.com/user/GalvinPython"
+                        title="My Minecraft Mods"
+                        icon={SiModrinth}
+                        color="#00AF5C"
+                    />
+                    <p>
+                        I prefer if you download my mods through Modrinth
+                        instead of GitHub/Curseforge so I can get revenue :3
+                    </p>
+                </LinksContainer>
 
-        <LinksContainer title="Other Social Media">
-          <LinkCard
-              href="https://bsky.app/profile/galvin.bsky.social"
-              title="Bluesky"
-              icon={SiBluesky}
-              color="#0285FF"
-          />
-          <br />
-          <LinkCard
-              href="https://bsky.app/profile/jsalstats.xyz"
-              title="Bluesky (JSALStats)"
-              icon={SiBluesky}
-              color="#0285FF"
-          />
-          <br />
-          <LinkCard
-            href="https://twitter.com/reallygalvin"
-            title="Twitter"
-            icon={SiX}
-            color="#000000"
-          />
-        </LinksContainer>
-      </main>
-    </div>
-  </body>
+                <!-- Other Social Media -->
+                <LinksContainer title="Other Social Media">
+                    <LinkCard
+                        href="https://bsky.app/profile/galvin.bsky.social"
+                        title="Bluesky"
+                        icon={SiBluesky}
+                        color="#0285FF"
+                    />
+                    <br />
+                    <LinkCard
+                        href="https://bsky.app/profile/jsalstats.xyz"
+                        title="Bluesky (JSALStats)"
+                        icon={SiBluesky}
+                        color="#0285FF"
+                    />
+                    <br />
+                    <LinkCard
+                        href="https://twitter.com/reallygalvin"
+                        title="Twitter"
+                        icon={SiX}
+                        color="#000000"
+                    />
+                </LinksContainer>
+            </main>
+        </div>
+    </body>
 </html>
